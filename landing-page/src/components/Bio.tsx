@@ -8,9 +8,9 @@ const Bio: React.FC = () => {
             src="https://drive.google.com/uc?export=view&id=1mrh0LdDvF6RQZ5je3oMjJdLc9YruXRqW"
             className="w-40 h-40 md:w-56 md:h-56 rounded-full border mb-4 md:mb-0 md:mr-8"
       />
-      <div>
+      <div className="text-left text-nowrap">
           <h2 className="text-xl p-6 text-left font-mono">Hello! I'm Zulker Yusuf.</h2>
-          <p className="text-gray-950 mt-4"></p>
+          <p className="text-gray-950">I'm a 22 y/o senior year NSU undergrad. Majoring in Information Systems and Finance, minoring in Mathermatics</p>
        </div>
    </section>
  );
