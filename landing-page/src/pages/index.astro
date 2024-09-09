@@ -5,7 +5,9 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import ProjectCard from "../components/Card";
 import Bio from "../components/Bio";
+import TabBar from "../components/TabBar";
 import '@/styles/global.css'
+import { object } from "astro/zod";
 
 const projects = [
   { title: 'Project0', description: 'yada yada yada'},
@@ -16,10 +18,12 @@ const projects = [
 <html>
   <body class="bg-gray-50">
     <meta name="viewport" content = "width=device-width, initial-scale=1.0">
-    
     <main class="container mx-auto px-4">
       <section class="my-8">
         <h1 class="text-4xl font-bold ml-16 my-10">Welcome to My World &#127757</h1>
+				<div class="object-right">				
+				<TabBar/>
+			</div>
         <Bio />        
         <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mt-8">          
           {projects.map(project => (

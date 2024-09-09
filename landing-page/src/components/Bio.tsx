@@ -12,7 +12,7 @@ const Bio: React.FC = () => {
       <div className="font-mono my-8">
           <h2 className=" text-2xl font-extrabold font-mono my-6">Hello! I'm Zulker Yusuf.</h2>
           <p className="text-gray-950 font-light text-xl">A 22 y/o Information Systems and Finance Major & Mathematics Minor.</p>
-          <p className="text-gray-950 font-light text-xl"> Currently a senior year under-grad in NSU</p>
+          <p className="text-gray-950 font-light text-xl"> Currently a senior year under-grad at NSU.</p>
           <p className="text-gray-950 font-bold text-2xl my-6"> Fun facts about me:</p>
           <p className="text-gray-900 font-normal text-xl">1. I once ran a 7.5k marathon </p>
           <p className="text-gray-900 font-normal text-xl">2. Made at least 30 hip-hop playlists</p>
