@@ -1,7 +1,6 @@
 ---
 import React from "react";
 import Image from "astro/components/Image.astro";
-import Header from "../components/header";
 import Footer from "../components/footer";
 import ProjectCard from "../components/Card";
 import Bio from "../components/Bio";
@@ -14,21 +13,22 @@ const projects = [
   { title: 'Project0', description: 'yada yada yada'}
   //Add more project
 ]
----
-<html>
+--- 
+<html lang="en">
+  <head>
+      <title>You're in Zulker's World</title>
+      <link rel="stylesheet" href="/src/styles/global.css">
+  </head>
   <body class="bg-gray-50">
     <meta name="viewport" content = "width=device-width, initial-scale=1.0">
-    <main class="container mx-auto px-4">
-      <section class="my-8">
-        <h1 class="text-4xl font-bold ml-16 my-10">Welcome to My World &#127757</h1>
-				<div class="object-right">				
-				<TabBar/>
-			</div>
-        <Bio />        
-        <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mt-8">          
-          {projects.map(project => (
-            <ProjectCard title={project.title} description={project.description} />
-          ))}
+    <main class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+      <section class="w-full md:w1/3">
+        <h1 class="text-4xl font-bold ml-16 my-10">Welcome to My World &#127757</h1>				
+        <Bio />         
+      </section>
+      <section class="w-full md:w-2/3">
+        <div class="mr-96 py-28">
+          <TabBar/>
         </div>
       </section>
     </main>
