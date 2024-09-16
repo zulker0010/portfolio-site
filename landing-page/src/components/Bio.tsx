@@ -3,7 +3,7 @@ import React from "react";
 
 const Bio: React.FC = () => {
  return(
-   <section className="object-left-top text-left flex-col p-6 max-w-lg mx-auto box-border border-r-2 ml-12">
+   <section className="object-left-top text-left flex-col p-6 max-w-lg mx-auto box-border border-r-2 ml-4">
       <div className="flex flex-col items-start">
         <img 
             src="https://drive.google.com/uc?export=view&id=1mrh0LdDvF6RQZ5je3oMjJdLc9YruXRqW"
@@ -16,7 +16,7 @@ const Bio: React.FC = () => {
           <p className="text-gray-950 font-bold text-2xl my-6"> Fun facts about me:</p>
           <p className="text-gray-900 font-normal text-xl">1. I once ran a 7.5k marathon </p>
           <p className="text-gray-900 font-normal text-xl">2. Made at least 30 hip-hop playlists</p>
-          <p className="text-gray-900 font-normal text-xl">3. Want to learn everything </p>
+          <p className="text-gray-900 font-normal text-xl">3. Traveled to 5/8 divisions of Bangladesh </p>
           <p className="text-gray-900 font-normal text-xl">4. Current interests include: data pipeline engineering & correlation of vintage and modern UI</p>
        </div>
    </section>

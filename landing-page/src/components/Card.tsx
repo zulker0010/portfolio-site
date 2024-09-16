@@ -1,4 +1,5 @@
 import React from "react";
+import { Card, CardTitle, CardHeader, CardContent, CardDescription, CardFooter } from "./ui/card";
 
 interface ProjectCardProps {
  title : string;
@@ -7,12 +8,14 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({title, description})=> {
  return(
-  <section className="object-left">
-  <div className="bg-white shadow-lg rounded-lg box-content h-32 w32 p-4 border-2 object-left-top">    
-    <h2 className="text-xl font-medium font-mono mb-2">{title}</h2>
-    <p className="text-gray-600">{description}</p>
-  </div>
-  </section>
+  <Card className="font-mono w-max p-4">
+    <CardHeader/>
+    <CardContent>
+      <img src="E:\Experiments\portfolio-site\landing-page\src\assets\mentors_mobile_app.png"></img>
+    </CardContent>
+      <CardTitle className="my-4 text-lg">Mentor's Mobile app V1.0  </CardTitle>
+      <CardDescription className='text-base'>A mobile app for the education and immigration company Mentor's for scheduling courses and mock tests.</CardDescription>    
+  </Card>
  ); 
 };
 

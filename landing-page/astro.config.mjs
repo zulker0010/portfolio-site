@@ -8,7 +8,7 @@ import vue from "@astrojs/vue";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind({
-    applyBaseStyles: true, //change to False after shadecn config
+    applyBaseStyles: false, //change to False after shadecn config
   }), react(), vue()],
   image: {
     domains: ["astro.build"],
