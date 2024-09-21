@@ -3,11 +3,11 @@ import React from "react";
 
 const Bio: React.FC = () => {
  return(
-   <section className="object-left-top text-left flex-col p-6 max-w-lg mx-auto box-border border-r-2 ml-4">
+   <section className="object-left-top text-left flex-col p-6 max-w-lg mx-auto box-border border-r-2 ml-4 border-slate-200">
       <div className="flex flex-col items-start">
         <img 
             src="https://drive.google.com/uc?export=view&id=1mrh0LdDvF6RQZ5je3oMjJdLc9YruXRqW"
-            className="w-40 h-40 md:w-56 md:h-56 rounded-full border mb-4 md:mb-0 md:mr-8"/>
+            className="w-96 h-96 md:w-56 md:h-56 rounded-full border mb-4 md:mb-0 md:mr-8 border-slate-200"/>
       </div>
       <div className="font-mono my-8">
           <h2 className=" text-2xl font-extrabold font-mono my-6">Hello! I'm Zulker Yusuf. </h2>

@@ -1,17 +1,22 @@
 ---
 import React from "react";
 import Image from "astro/components/Image.astro";
+import NavBar from "@/components/nav";
 import Footer from "../components/footer";
 import ProjectCard from "../components/Card";
 import Bio from "../components/Bio";
+
 
 import '@/styles/global.css'
 import { object } from "astro/zod";
 
 const projects = [
-  { title: 'Project0', description: 'yada yada yada'},
-  { title: 'Project0', description: 'yada yada yada'}
-  //Add more project
+  { title: 'Mentors mobile app v1.0', description: 'A cross platform mobile app built for the education & student immigration company Mentors.', image:"E:\Experiments\portfolio-site\landing-page\src\assets\mentors_mobile_app.png"},
+  { title: 'Divorce probability correlation ', description: 'A py script that analyzes the divorce probability of couples based on 50 different factors. ', image:"E:\Experiments\portfolio-site\landing-page\src\assets\mentors_mobile_app.png"},
+  { title: 'Prokash MVP prototype', description: 'A geolocation service that provides directions, maps and ETA for cash recharging stations.', image:"E:\Experiments\portfolio-site\landing-page\src\assets\mentors_mobile_app.png"},
+  { title: 'Editable Studios v1.0', description: 'A photo editing app that takes user picture with drag & drop. The edited image is reuploaded', image:"E:\Experiments\portfolio-site\landing-page\src\assets\mentors_mobile_app.png"},
+ 
+  //Add more projects
 ]
 --- 
 <html lang="en">
@@ -19,26 +24,17 @@ const projects = [
       <title>You're in Zulker's World</title>
       <link rel="stylesheet" href="/src/styles/global.css">
   </head>
-  <body class="bg-gray-50">
+  <body class="bg-slate-100">
     <meta name="viewport" content = "width=device-width, initial-scale=1.0">
     <main class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
       <section class="w-full md:w1/3">
-        <h1 class="text-4xl font-bold ml-8 my-10">Welcome to My World &#127757</h1>				
+        <h1 class="text-4xl font-bold ml-48 my-10">Welcome to My World &#127757</h1>				
         <Bio/> 
       </section>
-      <section class="w-full md:w-2/3">
-        <div class="mr-96 py-28">
-          <ul class="py-4">
-            <a href=""  class="font-mono font-extrabold text-xl mr-6">Projects</a>
-            <a href="https://substack.com/@zulkeryusuf" target="_blank" class="font-mono font-extrabold text-xl underline">Essays</a>
-            <a></a>
-          </ul>
-          
-          {projects.map(project =>(
-          <ProjectCard title={project.title} description={project.description}/>
-          ))
-        }
-        
+      <section class="w-full md:w-2/3">        
+        <div class="relative right-40 py-24">          
+          <NavBar/>
+          <ProjectCard></ProjectCard>
         </div>
       </section>
     </main>

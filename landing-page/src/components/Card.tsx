@@ -1,22 +1,63 @@
 import React from "react";
-import { Card, CardTitle, CardHeader, CardContent, CardDescription, CardFooter } from "./ui/card";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Card, CardBody, CardImg, CardTitle, CardText} from 'reactstrap';
 
-interface ProjectCardProps {
- title : string;
- description: string;
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({title, description})=> {
+const ProjectCard: React.FC=() => {
  return(
-  <Card className="font-mono w-max p-4">
-    <CardHeader/>
-    <CardContent>
-      <img src="E:\Experiments\portfolio-site\landing-page\src\assets\mentors_mobile_app.png"></img>
-    </CardContent>
-      <CardTitle className="my-4 text-lg">Mentor's Mobile app V1.0  </CardTitle>
-      <CardDescription className='text-base'>A mobile app for the education and immigration company Mentor's for scheduling courses and mock tests.</CardDescription>    
+  <>
+  <Card className="my-2 rounded-none">
+    <CardImg className="rounded-none"
+      alt="Card image cap"
+      src="https://picsum.photos/900/180"
+      style={{
+        height: 180      
+      }}
+      top
+      width="100%"
+    />
+    <CardBody className='font-mono font-bold'>
+      <CardTitle tag="h5">
+        Card Title
+      </CardTitle>
+      <CardText className="font-medium">
+        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+      </CardText>
+      <CardText>
+        <small className="text-muted">
+          Last updated 3 mins ago
+        </small>
+      </CardText>
+    </CardBody>
   </Card>
- ); 
+  <Card className="my-2">
+  <CardImg
+      className="rounded-none"
+      alt="Card image cap"
+      top
+      src="https://picsum.photos/900/180"
+      style={{
+        height: 180
+      }}
+      width="100%"
+    />
+    <CardBody className='font-mono font-bold'>
+      <CardTitle tag="h5">
+        Card Title
+      </CardTitle>
+      <CardText className="font-medium">
+        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+      </CardText>
+      <CardText>
+        <small className="text-muted">
+          Last updated 3 mins ago
+        </small>
+      </CardText>
+    </CardBody>
+    
+  </Card>
+</>
+ )
 };
+
 
 export default ProjectCard;
