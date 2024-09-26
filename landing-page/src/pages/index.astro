@@ -34,7 +34,9 @@ const projects = [
       <section class="w-full md:w-2/3">        
         <div class="relative right-40 py-24">          
           <NavBar/>
-          <ProjectCard></ProjectCard>
+          {projects.map(project => (
+          <ProjectCard title={project.title} description={project.description} image="image"/>
+          ))}
         </div>
       </section>
     </main>
