@@ -5,7 +5,6 @@ import {Card, CardBody, CardImg, CardTitle, CardText} from 'reactstrap';
 interface ProjectCardProps{
   title: string;
   description: string;
-  image: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps>=({title,description}) => {
@@ -13,10 +12,10 @@ const ProjectCard: React.FC<ProjectCardProps>=({title,description}) => {
   <>
   <Card className="my-2 rounded-none">
     <CardImg className="rounded-none"
-      alt="Card image cap"
-      src="https://picsum.photos/900/180"
+      src='src/assets/mentors_mobile_app.jpg'
+      alt="nothing"
       style={{
-        height: 180      
+        height: "100%"      
       }}
       top
       width="100%"
