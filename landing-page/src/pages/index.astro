@@ -8,21 +8,8 @@ import Bio from "../components/Bio";
 import '@/styles/global.css'
 import { object } from "astro/zod";
 
-const projects = [
-  { title: 'Mentors mobile app v1.0', 
-    description: 'A cross platform mobile app built for the education & student immigration company Mentors.',
-  
-  },
-  { title: 'Divorce probability correlation ',
-    description: 'A py script that analyzes the divorce probability of couples based on 50 different factors. ', 
-    
-  },
-  { title: 'Prokash MVP prototype', 
-    description: 'A geolocation service that provides directions, maps and ETA for cash recharging stations.', 
-    
-  },
+
   //Add more projects
-]
 --- 
 <html lang="en">
   <head>
@@ -37,11 +24,9 @@ const projects = [
         <Bio/>
       </section>
       <section class="w-full md:w-2/3">        
-        <div class="relative right-40 py-24">          
-          <NavBar/>
-          {projects.map(project => (
-          <ProjectCard title={project.title} description={project.description}/>
-          ))}
+        <div class="relative right-40 py-4">          
+          <NavBar/>          
+          <ProjectCard/>
         </div>
       </section>
     </main>
