@@ -1,12 +1,13 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Card, CardBody, CardImg, CardTitle, CardText} from 'reactstrap';
+import {Card, CardBody, CardImg, CardTitle, CardText, CardLink} from 'reactstrap';
 
 
 const ProjectCard: React.FC = () => {
  return(
   <>
-  <Card className="my-2 rounded-none">
+<CardLink href="https://public.tableau.com/app/profile/zulkernayeen.yusuf/viz/NetflixDataProject_17094666014200/Dashboard1?publish=yes" target ='_blank' >
+  <Card className="my-2 rounded-none" > 
     <CardImg className="rounded-none"
       src= 'src/assets/netflix_dashboard.jpg'
       alt="nothing"
@@ -15,8 +16,10 @@ const ProjectCard: React.FC = () => {
       }}
       top
       width="100%"
-    ></CardImg>
+    >      
+    </CardImg>
     <CardBody className='font-mono font-bold'>
+   
       <CardTitle tag="h5">
       Netflix Dashboard in Tableau
       </CardTitle>
@@ -28,8 +31,11 @@ const ProjectCard: React.FC = () => {
           Last updated 3 mins ago
         </small>
       </CardText>
-    </CardBody>
+      
+    </CardBody>    
   </Card>
+</CardLink>
+<CardLink href="https://www.behance.net/gallery/209010139/Mentors-app-UI-v10" target = "_blank">
   <Card className="my-2 rounded-none">
     <CardImg className="rounded-none"
       src= 'src/assets/mentors_mobile_app.jpg'
@@ -54,6 +60,8 @@ const ProjectCard: React.FC = () => {
       </CardText>
     </CardBody>
   </Card>
+  </CardLink>
+  <CardLink href="https://github.com/zulker0010/Divorce-probability/blob/main/cleaning.py" target="_blank">
   <Card className="my-2 rounded-none">
     <CardImg className="rounded-none"
       src= 'src/assets/divorce_probability.jpg'
@@ -78,7 +86,7 @@ const ProjectCard: React.FC = () => {
       </CardText>
     </CardBody>
   </Card>
-
+  </CardLink>
 </>
  )
 };
