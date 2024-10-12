@@ -6,9 +6,7 @@ import react from "@astrojs/react";
 import vue from "@astrojs/vue";
 
 // https://astro.build/config
-export default defineConfig({
-  site: 'https/zulker0010.github.io',
-  base: '/zulkeryusuf.github.io',
+export default defineConfig({  
   integrations: [tailwind({
     applyBaseStyles: false, //change to False after shadecn config
   }), react(), vue()],
